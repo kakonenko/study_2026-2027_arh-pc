@@ -1,13 +1,12 @@
-SRC = report.md
+SRC = report4.md
 
-all: report.pdf report.docx
+all: report4.pdf report4.docx
 
-report.pdf: $(SRC)
-	pandoc $(SRC) -o report.pdf --pdf-engine=xelatex -V mainfont="Times New Roman"
+report4.pdf: $(SRC)
+	pandoc $(SRC) -o report4.pdf --pdf-engine=xelatex -V mainfont="Times New Roman"
 
-report.docx: $(SRC)
-	pandoc $(SRC) -o report.docx
+report4.docx: $(SRC)
+	pandoc $(SRC) -o report4.docx
 
 clean:
-	rm -f report.pdf report.docx
-
+	rm -f report4.pdf report4.docx
